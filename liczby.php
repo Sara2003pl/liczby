@@ -36,7 +36,7 @@
     $suma = array_sum($tablica);
     print_r("Suma liczb: $suma");
 
-    echo "Wylosowana liczba z zakresu (0 - 20) to $i";
+    //echo "Wylosowana liczba z zakresu (0 - 20) to $i";
 
     ?>
 
