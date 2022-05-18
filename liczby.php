@@ -12,22 +12,31 @@
 
     $tablica = array();
 
-    for($i=1; $i < 20; $i++) {
+    for($i=1; $i <= 20; $i++) {
         $liczba = rand(1,20);
-        if($i%1!=0) {
+        //array_push($tablica, $liczba);
+        if($i%2!=1) {
     
             print_r("Liczba parzysta $i \n");
             
             } else {
             
             print_r("Liczba nieparzysta $i \n"); }
-        array_push($tablica, $liczba);
+        //array_push($tablica, $liczba);
     }
 
-    var_dump($tablica);
+    //var_dump($tablica);
+    $srednia = 0;
+    if(count($tablica)) {
+        $srednia = array_sum($tablica) / count($tablica);
+    }
+    print_r("Srednia to $srednia");
+    
 
+    $suma = array_sum($tablica);
+    print_r("Suma liczb: $suma");
 
-    echo "Wylosowana liczba z zakresu (15 - 30) to $i";
+    echo "Wylosowana liczba z zakresu (0 - 20) to $i";
 
     ?>
 
